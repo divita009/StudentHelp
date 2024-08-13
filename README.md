@@ -1,2 +1,1 @@
-# Language_Translator
-Language Translator in Python(Tkinter)
+website to help students
