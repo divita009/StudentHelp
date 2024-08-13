@@ -1,0 +1,242 @@
+:root{
+    --first-color:#2e2e41;
+    --second-color:#5b85ff;
+    --third-color:#434354;
+    --text-color:#fff;
+    --box-shadow: 0 5px 25px rgb(2,2,2,0.1);
+    --text-shadow: 0 5px 25px rgb(2,2,2,0.1);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgba(238, 134, 31, 0.864);
+}
+.head{
+    height : 550px;
+    width:100%;
+    background-color:rgb(39, 17, 124);
+    align-items: center;
+    justify-items: center;
+    display: grid;
+}
+h1{
+    color:azure;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+#head
+{
+    color: wheat;
+    text-shadow: var(--text-shadow);
+    font-family: cursive;
+    font-style: italic;
+}
+img{
+    padding: 30px;
+    width: 200px;
+    height:230px;
+}
+img.res{
+    height:100px;
+    width:100px;
+  
+    margin-left:120px;
+}
+
+section{
+    position: relative;
+    margin-top:10px;
+    padding: auto;
+    transition: 0.5s ease;
+}
+.main-container
+{
+    position:relative;
+}
+.tab-navigation{
+       position: relative;
+       display:flex;
+       justify-content: center;
+       align-items:center;
+       max-width:fit-content;
+       margin:0 auto;
+
+}
+.tab-nav-bar{
+    position: relative;
+    margin:65px 10px 40px 10px;
+}
+.tab-menu{
+    color:var(--text-color);
+    list-style: none;
+    background: var(--third-color);
+    max-width: 1255px;
+    padding:10px;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--third-color);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+}
+.tab-btn{
+    color: var(--text-color);
+    display:inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease;
+
+}
+.tab-btn.active{
+    background-color: #5b85ff;
+}
+.tab-btn:hover{
+background: var(--first-color);
+
+}
+
+
+.tab-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.tab{
+    
+    position:absolute;
+    top:0;
+    right:auto;
+    bottom:0;
+    left:auto;
+    max-width: 1100px;
+    padding: 15px 50px;
+    transform: translateX(25px);
+    content-visibility: hidden;
+    opacity: 0;
+}
+
+.tab.active{
+    transform: translateX(0);
+    content-visibility: visible;
+    opacity: 1;
+    transition: 1s ease;
+
+}
+.tab .row{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 50px 0;
+     gap: 30px;
+}
+.tab .img-card{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+}
+.tab .img-card .img{
+    width:100%;
+}
+
+.right-column
+{
+    max-width: 800px;
+
+}
+.info .title h1{
+    color :brown;
+}
+.info .description p, ul{
+       color: var(--text-color);  
+       line-height: 0.5cm;
+       font-size: medium;
+       font-weight: normal;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       list-style:square;
+}
+.info .description  h2{
+    color:darkblue;  
+    line-height: 0.5cm;
+    font-size: large;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style:square;
+}
+.design{
+    color:rgba(238, 134, 31, 0.864);
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+.deff{
+    margin-left:160px;
+    width:75px;
+    height:25px;
+    background-color:rgb(158, 10, 7);
+    box-shadow: var(--box-shadow);
+    font-size: medium;
+    color:aquamarine
+}
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
